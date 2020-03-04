@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>创建完博客的一些感想</title>
+    <url>/2020/03/03/%E5%88%9B%E5%BB%BA%E5%AE%8C%E5%8D%9A%E5%AE%A2%E7%9A%84%E4%B8%80%E4%BA%9B%E6%84%9F%E6%83%B3/</url>
+    <content><![CDATA[<h1 id="创建完博客的一些感想"><a href="#创建完博客的一些感想" class="headerlink" title="创建完博客的一些感想"></a>创建完博客的一些感想</h1><p>​    这几天沉迷于搭建自己的博客，中间也踩过好多坑，又因为本身对css，js这些不熟，出过好多bug。</p>
+<p>​    但是每次完成一个小项目就会特别高兴，从刚开始啥都不知道，然后百度出来<a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub pages</a>搭建个人博客的方法，发现了<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>这个快速、简洁且高效的博客框架。</p>
+<a id="more"></a>
+
+<h2 id="第一次-安装环境与在本地主机创建网站"><a href="#第一次-安装环境与在本地主机创建网站" class="headerlink" title="第一次 安装环境与在本地主机创建网站"></a>第一次 安装环境与在本地主机创建网站</h2><p>​    第一次搭建网站时，我心惊胆战的照着<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>官网的教程操作，第一次接触这个嘛，非常担心哪个地方操作不当，然后重来。下载<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>前，先安装<a href="https://git-scm.com/download/win" target="_blank" rel="noopener">git</a>和<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener">Node.js</a>，然后通过npm输入<code>npm install -g hexo-cli</code>就可以安装<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">hexo</a>框架了。(PS：我本来也不知道npm是啥，后来发现npm是随同NodeJS一起安装的，通过cmd使用就行了。)</p>
+<p>​    安装好hexo之后，跟着官方文档来操作，输入<code>hexo init &lt;folder&gt;</code>就会在<em>folder</em>这个文件夹下新建所需要的文件了。创建完成后，大致会有这几个重要的文件夹和文件夹，如下：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml #这是站点配置文件，之后很多设置要在这里面进行</span><br><span class="line">├── package.json #应用程序的信息，一般不用打开操作里面的文件</span><br><span class="line">├── scaffolds #模板文件夹，新建文章时，会根据这里面的模板来建立文件，比如文章的title，date等信息</span><br><span class="line">├── source #放用户的资源。除_posts文件夹之外，开头命名为_(下划线)的文件&#x2F;文件夹和隐藏的文件将会被忽略。Markdown(.md)和HTML(.html)文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。</span><br><span class="line">|   ├── _drafts #草稿，我感觉一般用不上</span><br><span class="line">|   └── _posts #文章就放在这儿</span><br><span class="line">└── themes #主题文件夹。下载好模板后放在这儿。Hexo会根据主题来生成静态页面</span><br></pre></td></tr></table></figure>
+
+<p>​    创建好后进入<code>_config.yml</code>文件，然后配置站点信息，具体的配置方法官方文档有，在想要修改的地方，在那个英文命后面修改就行了，看不懂的英文的复制粘贴，然后去网上翻译或者用别的软件翻译。我第一次使用时不知道这个。。。然后网站的title，name这些地方都是用的默认的，我直接在<code>public</code>文件夹里的<code>.html</code>文件改。然后用<code>hexo g</code>生成静态页面时，生成的<code>public</code>文件夹里的网站信息都是从<code>_config.yml</code>这个配置文件里获取的。（PS：一个小巧便捷的桌面翻译软件推荐：copytranslator，这个软件没广告，而且包含谷歌翻译，百度翻译，网易翻译等等，复制要翻译的英文，不用啥别的操作，译文就直接出来了。还有关于编辑<code>.yml</code>之类的文件的软件，网上很多，流行的像notepad++，sublime这些就挺好用的）</p>
+<p>​    右键网站文件夹的根目录，点击<code>Git bash here</code>然后使用<code>hexo cl</code>、<code>hexo g</code>、<code>hexo s</code>，再在浏览器中输入<code>http://localhost:4000/</code>就可以看见自己的网站了（PS：<code>hexo cl</code>是<code>hexo clean</code>的缩写，清除<code>public</code>文件夹及之前的缓存；<code>hexo g</code>是生成静态页面，页面的信息与配置就在生成的<code>public</code>文件夹里；<code>hexo s</code>将网站部署到本地主机上，进行这一步操作后就能打开<code>http://localhost:4000/</code>看见自己的网站了，不然不能访问。 <code>hexo d</code>将在后面用到，这个命令会将网站文件上传至自己的GitHub仓库中，然后就可以在自己的GitHub pages网站上看到自己的博客了）</p>
+<!--~~未完，待续，有时间再写~~-->]]></content>
+      <categories>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的第一篇博客</title>
+    <url>/2020/02/29/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h2 id="这是我的第一篇博克"><a href="#这是我的第一篇博克" class="headerlink" title="这是我的第一篇博克"></a>这是我的第一篇博克</h2><p>花了两天终于把自己的博客网站建起来了，虽然过程有点小复杂，但感觉还是挺好玩的。  </p>
+<a id="more"></a>
+
+<p>接下来我要完善博客，之后绑定域名，在博客中添加装饰品。  </p>
+<p>然后把原本写在CSDN上的一些文章搬运到这里来。</p>
+]]></content>
+      <categories>
+        <category>日记</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+      </tags>
+  </entry>
+</search>
