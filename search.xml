@@ -1,6 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>java常用类</title>
+    <url>/2020/04/08/java%E5%B8%B8%E7%94%A8%E7%B1%BB/</url>
+    <content><![CDATA[<h1 id="java常用类"><a href="#java常用类" class="headerlink" title="java常用类"></a>java常用类</h1><a id="more"></a>
+
+<h2 id="String类"><a href="#String类" class="headerlink" title="String类"></a>String类</h2><h3 id="比较字符串"><a href="#比较字符串" class="headerlink" title="比较字符串"></a>比较字符串</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//比较两个字符串是否相等</span></span><br><span class="line">equals(String str)</span><br><span class="line"><span class="comment">//比较两个字符串是否相等（忽略大小写）</span></span><br><span class="line">equalsIgnoreCase(String str)</span><br><span class="line"><span class="comment">//判断字符串是否以指定字符串开始或结束</span></span><br><span class="line">startWith(String prefix)</span><br><span class="line">endsWith(String suffix)</span><br><span class="line"><span class="comment">//判断一个字符串是否大于、等于或小于另一个字符串（依据他们在字典中的顺序）</span></span><br><span class="line">compareTo(String str)</span><br></pre></td></tr></table></figure>
+
+<h3 id="获取字符串长度"><a href="#获取字符串长度" class="headerlink" title="获取字符串长度"></a>获取字符串长度</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">length()</span><br></pre></td></tr></table></figure>
+
+<h3 id="字符串大小写转换"><a href="#字符串大小写转换" class="headerlink" title="字符串大小写转换"></a>字符串大小写转换</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//全改为大写</span></span><br><span class="line">toLowerCase()</span><br><span class="line"><span class="comment">//全改为小写</span></span><br><span class="line">toUpperCase()</span><br></pre></td></tr></table></figure>
+
+<h3 id="查找字符串"><a href="#查找字符串" class="headerlink" title="查找字符串"></a>查找字符串</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//搜索字符或字符串首次出现的位置</span></span><br><span class="line">indexOf(<span class="keyword">int</span> ch)</span><br><span class="line">indexOf(String str)</span><br><span class="line">indexOf(<span class="keyword">int</span> ch, <span class="keyword">int</span> startIndex)</span><br><span class="line">indexOf(String str, <span class="keyword">int</span> startIndex)</span><br><span class="line"><span class="comment">//搜索字符或字符串最后一次出现的位置</span></span><br><span class="line">lastIndexOf(<span class="keyword">int</span> ch)</span><br><span class="line">lastIndexOf(String str)</span><br><span class="line">lastIndexOf(<span class="keyword">int</span> ch, <span class="keyword">int</span> startIndex)</span><br><span class="line">lastIndexOf(String str, <span class="keyword">int</span> startIndex)</span><br></pre></td></tr></table></figure>
+
+<h3 id="从现有字符串中截取子字符串"><a href="#从现有字符串中截取子字符串" class="headerlink" title="从现有字符串中截取子字符串"></a>从现有字符串中截取子字符串</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">substring(<span class="keyword">int</span> beginIndex)</span><br><span class="line">substring(<span class="keyword">int</span> beginIndex, <span class="keyword">int</span> endIndex)</span><br></pre></td></tr></table></figure>
+
+<h3 id="去掉字符串首尾空格"><a href="#去掉字符串首尾空格" class="headerlink" title="去掉字符串首尾空格"></a>去掉字符串首尾空格</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">trim()</span><br></pre></td></tr></table></figure>
+
+<h3 id="替换字符串中的字符或字串"><a href="#替换字符串中的字符或字串" class="headerlink" title="替换字符串中的字符或字串"></a>替换字符串中的字符或字串</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">replace(<span class="keyword">char</span> oldChar, <span class="keyword">char</span> newChar)</span><br></pre></td></tr></table></figure>
+
+<h3 id="分割字符"><a href="#分割字符" class="headerlink" title="分割字符"></a>分割字符</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">split(String regex, <span class="keyword">int</span> limit)</span><br></pre></td></tr></table></figure>
+
+<h3 id="格式化字符串"><a href="#格式化字符串" class="headerlink" title="格式化字符串"></a>格式化字符串</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line">format(String format, Object obj)</span><br><span class="line">format(Locale locale, String format, Object obj)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Date类"><a href="#Date类" class="headerlink" title="Date类"></a>Date类</h2><h3 id="无参数的构造方法"><a href="#无参数的构造方法" class="headerlink" title="无参数的构造方法"></a>无参数的构造方法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Date date &#x3D; new Date();</span><br></pre></td></tr></table></figure>
+
+<h3 id="有参数的构造方法"><a href="#有参数的构造方法" class="headerlink" title="有参数的构造方法"></a>有参数的构造方法</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Date date &#x3D; new Date(1000);</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Scanner类"><a href="#Scanner类" class="headerlink" title="Scanner类"></a>Scanner类</h2><p>实现用户的输入</p>
+<h3 id="创建"><a href="#创建" class="headerlink" title="创建"></a>创建</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">new Scanner(in)</span><br><span class="line"></span><br><span class="line">new Scanner(file)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="Math和Random类"><a href="#Math和Random类" class="headerlink" title="Math和Random类"></a>Math和Random类</h2><h3 id="Math类"><a href="#Math类" class="headerlink" title="Math类"></a>Math类</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;返回a的绝对值</span><br><span class="line">abs(double a)</span><br><span class="line">&#x2F;&#x2F;返回a、b的最大值</span><br><span class="line">max(double a, double b)</span><br><span class="line">&#x2F;&#x2F;返回a、b的最小值</span><br><span class="line">min(double a, double b)</span><br><span class="line">&#x2F;&#x2F;返回a的b次幂</span><br><span class="line">pow(double a, double b)</span><br><span class="line">&#x2F;&#x2F;返回a的平方根</span><br><span class="line">sqrt(double a)</span><br><span class="line">&#x2F;&#x2F;返回a的对数</span><br><span class="line">log(double a)</span><br><span class="line">&#x2F;&#x2F;返回a的正弦值</span><br><span class="line">sin(double a)</span><br><span class="line">&#x2F;&#x2F;返回a的反正弦值</span><br><span class="line">asin(double a)</span><br><span class="line">&#x2F;&#x2F;产生一个0到1之间的随机数，不包括0和1</span><br><span class="line">random()</span><br></pre></td></tr></table></figure>
+
+<h3 id="Random类"><a href="#Random类" class="headerlink" title="Random类"></a>Random类</h3><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Random(long seed)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="数字格式化"><a href="#数字格式化" class="headerlink" title="数字格式化"></a>数字格式化</h2><h3 id="Formatter类"><a href="#Formatter类" class="headerlink" title="Formatter类"></a>Formatter类</h3><blockquote>
+<ol>
+<li><p>格式化模式</p>
+<p>format方法中一个使用双引号括起来的字符序列，由格式符与普通字符构</p>
+</li>
+<li><p>值列表</p>
+<p>使用逗号分隔的变量、常量或表达式</p>
+</li>
+</ol>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F;例</span><br><span class="line">String m &#x3D; String.format(&quot;%d元%.1f箱%d斤&quot;, 78,8.0,125)</span><br></pre></td></tr></table></figure>
+
+<h3 id="格式化整数"><a href="#格式化整数" class="headerlink" title="格式化整数"></a>格式化整数</h3><h4 id="1-d-o-x-X"><a href="#1-d-o-x-X" class="headerlink" title="1. %d, %o, %x, %X"></a>1. %d, %o, %x, %X</h4><h4 id="2-修饰符"><a href="#2-修饰符" class="headerlink" title="2. 修饰符"></a>2. 修饰符</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&quot;+&quot;加号修饰符：格式化正整数时，强制添加正号</span><br><span class="line">&quot;,&quot;逗号修饰符：格式化整数时，按千分组</span><br></pre></td></tr></table></figure>
+
+<h3 id="数据的宽度"><a href="#数据的宽度" class="headerlink" title="数据的宽度"></a>数据的宽度</h3><p>返回的字符串的长度。一般格式为“%md”，效果是在数字的左面增加空格</p>
+<p>或“%-md”，效果是在数字的右面增加空格</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">String m &#x3D; String.format(&quot;%6d&quot;, 63)</span><br></pre></td></tr></table></figure>
+
+<h3 id="格式化浮点数"><a href="#格式化浮点数" class="headerlink" title="格式化浮点数"></a>格式化浮点数</h3><h4 id="1-f-e-g-a"><a href="#1-f-e-g-a" class="headerlink" title="1. %f, %e, %g, %a"></a>1. %f, %e, %g, %a</h4><h4 id="2-修饰符（同上）"><a href="#2-修饰符（同上）" class="headerlink" title="2. 修饰符（同上）"></a>2. 修饰符（同上）</h4><h3 id="限制小数位的宽度"><a href="#限制小数位的宽度" class="headerlink" title="限制小数位的宽度"></a>限制小数位的宽度</h3><p>“%.nf”限制小数的位数，n是保留的小数位数。</p>
+<p>宽度一般格式为“%md”，效果是在数字的左面增加空格</p>
+<p>或“%-md”，效果是在数字的右面增加空格</p>
+<h2 id="StringBuffer类"><a href="#StringBuffer类" class="headerlink" title="StringBuffer类"></a>StringBuffer类</h2><p>StringBuffer对象创建的字符串可以修改</p>
+<h3 id="构造方法"><a href="#构造方法" class="headerlink" title="构造方法"></a>构造方法</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">使用第一个无参的构造方法创建StringBuffer对象后，分配给该对象的初始容量可以容纳16个字符。当该对象的实体存放的字符序列的长度大于16时，实体的容量自动增加，以便存放所有增加的字符。StringBuffer对象可以通过length()方法获取实体中存放的字符序列的长度，通过capacity()方法获取当前实体的实际容量。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">StringBuffer()</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">使用第二个带有int参数的构造方法创建StringBuffer对象后，分配给该对象的初始容量是由参数size指定。当该对象的实体存放的字符序列的长度大于size时，实体的容量自动增加，以便存放所有增加的字符。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">StringBuffer(<span class="keyword">int</span> size)</span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">使用第三个带有String参数的构造方法创建StringBuffer对象后，分配给该对象的初始容量为参数字符串s的长度额外在增加16个字符。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">StringBuffer(String s)</span><br></pre></td></tr></table></figure>
+
+<h3 id="常用方法"><a href="#常用方法" class="headerlink" title="常用方法"></a>常用方法</h3><h4 id="append"><a href="#append" class="headerlink" title="append()"></a>append()</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">//使用append方法可以将其他Java类型数据转化为字符串后，再追加到StringBuffer对象中。</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">将一个字符串对象追加到当前StringBuffer对象中，并返回当前StringBuffer对象的引用。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function">StringBuffer <span class="title">append</span><span class="params">(String s)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="comment">/**</span></span></span><br><span class="line"><span class="function"><span class="comment">将一个int型数据转化为字符串对象后再追加到当前StringBuffer对象中，并返回当前StringBuffer对象的引用。</span></span></span><br><span class="line"><span class="function"><span class="comment">*/</span></span></span><br><span class="line"><span class="function">StringBuffer <span class="title">append</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="comment">/**</span></span></span><br><span class="line"><span class="function"><span class="comment">将一个Object对象o的字符串表示追加到当前StringBuffer对象中，并返回当前StringBuffer对象的引用。</span></span></span><br><span class="line"><span class="function"><span class="comment">*/</span></span></span><br><span class="line"><span class="function">StringBuffer <span class="title">append</span><span class="params">(Object o)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="comment">//类似的方法还有：</span></span></span><br><span class="line"><span class="function">StringBuffer <span class="title">append</span><span class="params">(<span class="keyword">boolean</span> b)</span></span></span><br><span class="line"><span class="function">StringBuffer <span class="title">append</span><span class="params">(<span class="keyword">char</span> c)</span></span></span><br><span class="line"><span class="function">StringBuffer <span class="title">append</span><span class="params">(<span class="keyword">long</span> n)</span></span></span><br><span class="line"><span class="function">StringBuffer <span class="title">append</span><span class="params">(<span class="keyword">float</span> f)</span></span></span><br><span class="line"><span class="function">StringBuffer <span class="title">append</span><span class="params">(<span class="keyword">double</span> d)</span>。</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="charAt-和setCharAt"><a href="#charAt-和setCharAt" class="headerlink" title="charAt()和setCharAt()"></a>charAt()和setCharAt()</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">charAt(int n)方法用来获取参数n指定位置上的单个字符。字符串序列从0开始，即当前对象实体中n的值必须是非负的，并且小于当前对象实体中字符串的序列长度</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">char</span> <span class="title">charAt</span><span class="params">(<span class="keyword">int</span> n)</span></span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function"><span class="comment">/**</span></span></span><br><span class="line"><span class="function"><span class="comment">setCharAt(int n,char ch)方法用来将当前StringBuffer对象实体中的字符对象位置n处的字符用参数ch指定的字符替换。n的值必须是非负的，并且小于当前对象实体中字符串序列的长度</span></span></span><br><span class="line"><span class="function"><span class="comment">*/</span></span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setCharAt</span><span class="params">(<span class="keyword">int</span> n, <span class="keyword">char</span> ch)</span></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="insert"><a href="#insert" class="headerlink" title="insert()"></a>insert()</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">StringBuffer对象使用insert(int index,String str)方法将参数str指定的字符串插入到参数index的位置，并返回当前对象的引用。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function">StringBuffer <span class="title">insert</span><span class="params">(<span class="keyword">int</span> index,String str)</span></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="reverse"><a href="#reverse" class="headerlink" title="reverse()"></a>reverse()</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">StringBuffer对象使用reverse()方法将该对象实体中的字符翻转，并返回当前对象的引用。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> StringBuffer <span class="title">reverse</span><span class="params">()</span></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="delete"><a href="#delete" class="headerlink" title="delete()"></a>delete()</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">delete(int startIndex,int endIndex)该方法用于删除子字符串。参数startIndex指定需删除的第一个字符的下标，而endIndex指定了需删除的最后一个字符的下一个字符的下标。因此要删除的子字符串是从startIndex位置开始到endIndex-1的位置结束。deleteCharAt(int index)方法删除当前StringBuffer对象实体的字符串中在index位置的字符。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function">StringBuffer <span class="title">delete</span><span class="params">(<span class="keyword">int</span> startIndex,<span class="keyword">int</span> endIndex)</span></span></span><br></pre></td></tr></table></figure>
+
+<h4 id="replace"><a href="#replace" class="headerlink" title="replace()"></a>replace()</h4><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">replace(int startIndex,int endIndex,String str)方法将当前StringBuffer对象实体中的字符串的一个子字符串用参数str指定的字符串替换。被替换的子字符串由下标startIndex和endIndex指定，即从starIndex到endIndex-1的字符串被替换。该方法返回当前StringBuffer对象的引用。</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="function">StringBuffer <span class="title">replace</span><span class="params">(<span class="keyword">int</span> startIndex,<span class="keyword">int</span> endIndex,String str)</span></span></span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>记录第一次使用vscode</title>
+    <url>/2020/03/19/%E8%AE%B0%E5%BD%95%E7%AC%AC%E4%B8%80%E6%AC%A1%E4%BD%BF%E7%94%A8vscode/</url>
+    <content><![CDATA[<h1 id="记录第一次使用vscode"><a href="#记录第一次使用vscode" class="headerlink" title="记录第一次使用vscode"></a>记录第一次使用vscode</h1><p>今天闲来无聊，想起vscode这个软件，之前也下过很多次，但每次都不会使用，然后卸载了。今天想起它，经过一段深思冥想，查找资料，看别人的博客，阅读官方文档，终于学会使用了。</p>
+<p>学会之后发现，这个软件巨好用，虽然它不是IDE，但它通过各种插件，效果比一般的IDE还要好，它小巧，即点即用；通过插件，支持多种语言的编写。</p>
+]]></content>
+      <categories>
+        <category>日记</category>
+        <category>vscode</category>
+      </categories>
+      <tags>
+        <tag>日记</tag>
+        <tag>vscode</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>排序算法</title>
+    <url>/2020/03/15/%E6%8E%92%E5%BA%8F/</url>
+    <content><![CDATA[<h1 id="排序算法"><a href="#排序算法" class="headerlink" title="排序算法"></a>排序算法</h1><p>排序算法可以分为内部排序和外部排序，内部排序是数据记录在内存中进行排序，而外部排序是因排序的数据很大，一次不能容纳全部的排序记录，在排序过程中需要访问外存。常见的内部排序算法有：插入排序、希尔排序、选择排序、冒泡排序、归并排序、快速排序、堆排序、基数排序等。</p>
+<a id="more"></a>
+
+<h2 id="排序算法情况比较"><a href="#排序算法情况比较" class="headerlink" title="排序算法情况比较"></a>排序算法情况比较</h2><p><img src="https://www.runoob.com/wp-content/uploads/2019/03/sort.png" alt="img"></p>
+<p><img src="https://www.runoob.com/wp-content/uploads/2019/03/0B319B38-B70E-4118-B897-74EFA7E368F9.png" alt="img"></p>
+<h2 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h2><h3 id="基本思想"><a href="#基本思想" class="headerlink" title="基本思想"></a>基本思想</h3><p>两个数比较大小，较大的数下沉，较小的数冒起来。</p>
+<h3 id="过程"><a href="#过程" class="headerlink" title="过程"></a>过程</h3><ul>
+<li> 比较相邻的两个数据，如果第二个数小，就交换位置。 </li>
+<li> 从后向前两两比较，一直到比较最前两个数据。最终最小数被交换到起始的位置，这样第一个最小数的位置就排好了。 </li>
+<li> 继续重复上述过程，依次将第2.3...n-1个最小数排好位置。 </li>
+</ul>
+
+
+<p>执行图解如图</p>
+<p><img src="https://pic.rmb.bdstatic.com/e1329ad44c28f4ac11fd2325b04f20fc4748.gif" alt="img"></p>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">BubbleSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;arr.length-i-<span class="number">1</span>;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>])&#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = arr[j+<span class="number">1</span>];</span><br><span class="line">                    arr[j+<span class="number">1</span>]=arr[j];</span><br><span class="line">                    arr[j]=temp;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="优化"><a href="#优化" class="headerlink" title="优化"></a>优化</h3><h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p>数据的顺序排好之后，冒泡算法仍然会继续进行下一轮比较，直到arr.length-1次，但后面的比较没有意义</p>
+<h4 id="方案"><a href="#方案" class="headerlink" title="方案"></a>方案</h4><p>设置标志位flag，如果发生了交换flag设置为true；如果没有交换就设置为false。<br>这样当一轮比较结束后如果flag仍为false，即：这一轮没有发生交换，说明数据的顺序已经排好，没有必要继续进行下去。</p>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">BubbleSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">boolean</span> flag;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;arr.length;i++)&#123;</span><br><span class="line">            flag = <span class="keyword">false</span>;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;arr.length-i-<span class="number">1</span>;j++)&#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[j] &gt; arr[j + <span class="number">1</span>])&#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = arr[j+<span class="number">1</span>];</span><br><span class="line">                    arr[j+<span class="number">1</span>]=arr[j];</span><br><span class="line">                    arr[j]=temp;</span><br><span class="line">                    flag = <span class="keyword">true</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 判断标志位是否为false，如果为false，说明后面的元素已经有序，就直接return</span></span><br><span class="line">            <span class="keyword">if</span>(!flag)&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h2><h3 id="基本思想-1"><a href="#基本思想-1" class="headerlink" title="基本思想"></a>基本思想</h3><p>在长度为N的无序数组中，第一次遍历n-1个数，找到最小的数值与第一个元素交换；<br>第二次遍历n-2个数，找到最小的数值与第二个元素交换；<br>。。。<br>第n-1次遍历，找到最小的数值与第n-1个元素交换，排序完成。</p>
+<h3 id="过程-1"><a href="#过程-1" class="headerlink" title="过程"></a>过程</h3><p><img src="https://upload-images.jianshu.io/upload_images/7789414-5893f3ff1b915c38.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/811/format/webp" alt="img"></p>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">SelectSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">            <span class="keyword">int</span> min = i;<span class="comment">//记录最小值的位置</span></span><br><span class="line">            <span class="keyword">int</span> value = arr[i];<span class="comment">//记录最小值的值</span></span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i + <span class="number">1</span>; j &lt; arr.length; j++) &#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[j] &lt; arr[i] &amp;&amp; arr[j] &lt; value) &#123;</span><br><span class="line">                    min = j;</span><br><span class="line">                    value = arr[j];</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">final</span> <span class="keyword">int</span> temp = arr[min];</span><br><span class="line">            arr[min] = arr[i];</span><br><span class="line">            arr[i] = temp;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h2><h3 id="基本思想-2"><a href="#基本思想-2" class="headerlink" title="基本思想"></a>基本思想</h3><p>在要排序的一组数中，假定前n-1个数已经排好序，现在将第n个数插到前面的有序数列中，使得这n个数也是排好顺序的。如此反复循环，直到全部排好顺序。</p>
+<h3 id="过程-2"><a href="#过程-2" class="headerlink" title="过程"></a>过程</h3><p><img src="https://upload-images.jianshu.io/upload_images/7789414-d3e7769cd797534d.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/811/format/webp" alt="img"></p>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">InsertionSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &gt; <span class="number">0</span>; j--) &#123;</span><br><span class="line">                <span class="keyword">if</span> (arr[j] &lt; arr[j - <span class="number">1</span>]) &#123;</span><br><span class="line">                    <span class="keyword">int</span> temp = arr[j];</span><br><span class="line">                    arr[j] = arr[j - <span class="number">1</span>];</span><br><span class="line">                    arr[j - <span class="number">1</span>] = temp;</span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="希尔排序"><a href="#希尔排序" class="headerlink" title="希尔排序"></a>希尔排序</h2><h3 id="基本思想-3"><a href="#基本思想-3" class="headerlink" title="基本思想"></a>基本思想</h3><p>在要排序的一组数中，根据某一增量分为若干子序列，并对子序列分别进行插入排序。<br>然后逐渐将增量减小,并重复上述过程。直至增量为1,此时数据序列基本有序,最后进行插入排序。</p>
+<h3 id="过程-3"><a href="#过程-3" class="headerlink" title="过程"></a>过程</h3><p><img src="https://www.runoob.com/wp-content/uploads/2019/03/Sorting_shellsort_anim.gif" alt="img"></p>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">HellSort</span><span class="params">(<span class="keyword">int</span>[] arr)</span></span>&#123;</span><br><span class="line">        <span class="keyword">int</span> gap = <span class="number">4</span>;</span><br><span class="line">        <span class="keyword">while</span>(gap&gt;<span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> i = gap; i &lt; arr.length; i+=gap) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j = i; j &gt; <span class="number">0</span>; j-=gap) &#123;</span><br><span class="line">                    <span class="keyword">if</span> (arr[j] &lt; arr[j - gap]) &#123;</span><br><span class="line">                        <span class="keyword">int</span> temp = arr[j - gap];</span><br><span class="line">                        arr[j - gap] = arr[j];</span><br><span class="line">                        arr[j] = temp;</span><br><span class="line">                    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                        <span class="keyword">break</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            gap/=<span class="number">2</span>;</span><br><span class="line">        &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h2><h4 id="基本思想-4"><a href="#基本思想-4" class="headerlink" title="基本思想"></a>基本思想</h4><ul>
+<li> 先从数列中取出一个数作为key值； </li>
+<li> 将比这个数小的数全部放在它的左边，大于或等于它的数全部放在它的右边；  </li>
+<li> 对左右两个小数列重复第二步，直至各区间只有1个数。 </li>
+</ul>
+
+<h4 id="过程-4"><a href="#过程-4" class="headerlink" title="过程"></a>过程</h4><p><img src="https://www.runoob.com/wp-content/uploads/2019/03/quickSort.gif" alt="img"></p>
+<p>代码</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">FastSort</span><span class="params">(<span class="keyword">int</span>[] arr, <span class="keyword">int</span> low, <span class="keyword">int</span> high)</span></span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(low&gt;high)&#123;</span><br><span class="line">            <span class="keyword">return</span> ;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">int</span> i = low;</span><br><span class="line">        <span class="keyword">int</span> j = high;</span><br><span class="line">        <span class="keyword">int</span> pivot = arr[i];</span><br><span class="line">        <span class="keyword">while</span>(i&lt;j)&#123;</span><br><span class="line">            <span class="keyword">while</span>(i&lt;j &amp;&amp; arr[j]&gt;=pivot)&#123;</span><br><span class="line">                j--;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(i&lt;j)&#123;</span><br><span class="line">                arr[i] = arr[j];</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span>(i&lt;j &amp;&amp; arr[i]&lt;=pivot)&#123;</span><br><span class="line">                i++;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(i&lt;j)&#123;</span><br><span class="line">                arr[j] = arr[i];</span><br><span class="line">                j--;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        arr[i] = pivot;</span><br><span class="line">        FastSort(arr, low, i-<span class="number">1</span>);</span><br><span class="line">        FastSort(arr, i+<span class="number">1</span>, high);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h2><h2 id="堆排序"><a href="#堆排序" class="headerlink" title="堆排序"></a>堆排序</h2><h2 id="基数排序"><a href="#基数排序" class="headerlink" title="基数排序"></a>基数排序</h2>]]></content>
+      <categories>
+        <category>算法</category>
+        <category>java</category>
+      </categories>
+      <tags>
+        <tag>java</tag>
+        <tag>算法</tag>
+        <tag>排序</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>java实现Fibonacci</title>
     <url>/2020/03/11/java%E5%AE%9E%E7%8E%B0Fibonacci/</url>
     <content><![CDATA[<h1 id="Fibonacci"><a href="#Fibonacci" class="headerlink" title="Fibonacci"></a>Fibonacci</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>求斐波那契数列的第n项</p>
