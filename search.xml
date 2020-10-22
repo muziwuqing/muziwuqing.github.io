@@ -21,6 +21,8 @@
     <title>无人汽车学习------2</title>
     <url>/2020/07/16/%E6%97%A0%E4%BA%BA%E6%B1%BD%E8%BD%A6%E5%AD%A6%E4%B9%A0------2/</url>
     <content><![CDATA[<h1 id="高精地图"><a href="#高精地图" class="headerlink" title="高精地图"></a>高精地图</h1><p>高精地图是Apollo的核心</p>
+<a id="more"></a>
+
 <h2 id="高精地图的三大基础功能"><a href="#高精地图的三大基础功能" class="headerlink" title="高精地图的三大基础功能"></a>高精地图的三大基础功能</h2><ul>
 <li><p>定位</p>
 <ul>
@@ -56,35 +58,18 @@
       </tags>
   </entry>
   <entry>
-    <title>无人汽车学习------3</title>
-    <url>/2020/07/16/%E6%97%A0%E4%BA%BA%E6%B1%BD%E8%BD%A6%E5%AD%A6%E4%B9%A0------3/</url>
-    <content><![CDATA[<h1 id="定位"><a href="#定位" class="headerlink" title="定位"></a>定位</h1>]]></content>
-      <categories>
-        <category>人工智能</category>
-      </categories>
-      <tags>
-        <tag>python</tag>
-        <tag>人工智能</tag>
-        <tag>无人汽车</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>无人汽车学习------1</title>
     <url>/2020/07/15/%E6%97%A0%E4%BA%BA%E6%B1%BD%E8%BD%A6%E5%AD%A6%E4%B9%A0------1/</url>
     <content><![CDATA[<h1 id="无人汽车概览"><a href="#无人汽车概览" class="headerlink" title="无人汽车概览"></a>无人汽车概览</h1><h2 id="无人汽车分类"><a href="#无人汽车分类" class="headerlink" title="无人汽车分类"></a>无人汽车分类</h2><ol start="0">
-<li><p>驾驶员是驾驶系统唯一决策者</p>
-</li>
-<li><p>Driver Assistance 驾驶员辅助</p>
-</li>
-<li><p>Partial Automation 部分自动化</p>
-</li>
-<li><p>Conditional Automation 有条件的自动化</p>
-</li>
-<li><p>No Human Interference 高度自动化</p>
-</li>
-<li><p>Full Automation 完全自动化 </p>
-</li>
+<li>驾驶员是驾驶系统唯一决策者</li>
+<li>Driver Assistance 驾驶员辅助</li>
+<li>Partial Automation 部分自动化</li>
+<li>Conditional Automation 有条件的自动化</li>
+<li>No Human Interference 高度自动化</li>
+<li>Full Automation 完全自动化 </li>
 </ol>
+<a id="more"></a>
+
 <h2 id="参考车辆与硬件平台"><a href="#参考车辆与硬件平台" class="headerlink" title="参考车辆与硬件平台"></a>参考车辆与硬件平台</h2><ul>
 <li>参考车辆<ul>
 <li>线性控制车辆</li>
