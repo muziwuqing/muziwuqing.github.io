@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>简历</title>
-    <url>/2020/07/24/%E7%AE%80%E5%8E%86/</url>
-    <content><![CDATA[<h1 id="个人简历"><a href="#个人简历" class="headerlink" title="个人简历"></a>个人简历</h1><h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>VS2019</p>
-<p>VSCODE</p>
-<p>Pycharm</p>
-<p>Idea</p>
-<p>CLion</p>
-<p>jupyter</p>
-<p>eclipse</p>
-<h2 id="语言"><a href="#语言" class="headerlink" title="语言"></a>语言</h2><p>c++/c</p>
-<p>java</p>
-<p>python</p>
-<h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>tensorflow/keras</p>
-<p>opencv</p>
-]]></content>
-  </entry>
-  <entry>
     <title>无人汽车学习------2</title>
     <url>/2020/07/16/%E6%97%A0%E4%BA%BA%E6%B1%BD%E8%BD%A6%E5%AD%A6%E4%B9%A0------2/</url>
     <content><![CDATA[<h1 id="高精地图"><a href="#高精地图" class="headerlink" title="高精地图"></a>高精地图</h1><p>高精地图是Apollo的核心</p>
